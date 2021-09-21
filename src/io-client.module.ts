@@ -1,23 +1,20 @@
-import { Module, DynamicModule } from '@nestjs/common';
-import { IOClientCoreModule } from './io-client-core.module';
-import {
-  IOClientModuleOptions,
-  IOClientModuleAsyncOptions,
-} from './io-client.interface';
+import { Module, DynamicModule } from '@nestjs/common'
+import { IoClientCoreModule } from './io-client-core.module'
+import { IoClientModuleOptions, IoClientModuleAsyncOptions } from './io-client.interface'
 
 @Module({})
-export class IOClientModule {
-  static forRoot(options: IOClientModuleOptions): DynamicModule {
+export class IoClientModule {
+  static forRoot(options: IoClientModuleOptions): DynamicModule {
     return {
-      module: IOClientModule,
-      imports: [IOClientCoreModule.forRoot(options)],
-    };
+      module: IoClientModule,
+      imports: [IoClientCoreModule.forRoot(options)],
+    }
   }
 
-  static forRootAsync(options: IOClientModuleAsyncOptions): DynamicModule {
+  static forRootAsync(options: IoClientModuleAsyncOptions): DynamicModule {
     return {
-      module: IOClientModule,
-      imports: [IOClientCoreModule.forRootAsync(options)],
-    };
+      module: IoClientModule,
+      imports: [IoClientCoreModule.forRootAsync(options)],
+    }
   }
 }

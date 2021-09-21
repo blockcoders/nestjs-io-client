@@ -1,4 +1,4 @@
-export const DECORATED_PREFIX = 'SocketIO-ClientJS';
-export const IOCLIENT_PROVIDER_NAME = 'IOClientProviderName';
-export const IOCLIENT_MODULE_OPTIONS = 'IOClientModuleOptions';
-export const IOCLIENT_EVENT_METADATA = 'IOClientEventMetadata';
+export const DECORATED_PREFIX = 'SocketIoClientJS'
+export const IOCLIENT_PROVIDER_NAME = 'IoClientProviderName'
+export const IOCLIENT_MODULE_OPTIONS = 'IoClientModuleOptions'
+export const IOCLIENT_EVENT_METADATA = 'IoClientEventMetadata'

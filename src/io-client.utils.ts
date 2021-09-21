@@ -1,5 +1,5 @@
-import { DECORATED_PREFIX } from './io-client.constants';
+import { DECORATED_PREFIX } from './io-client.constants'
 
-export function getIOClientToken(): string {
-  return `${DECORATED_PREFIX}:Provider`;
+export function getIoClientToken(): string {
+  return `${DECORATED_PREFIX}:Provider`
 }

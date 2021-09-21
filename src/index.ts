@@ -1,14 +1,5 @@
-export { IOClientModule } from './io-client.module';
-export { InjectIOClientProvider, ListenEvent } from './io-client.decorators';
-export {
-  IOClientModuleOptions,
-  IOClientModuleAsyncOptions,
-  IOClientEventMetadata,
-} from './io-client.interface';
-export { getIOClientToken } from './io-client.utils';
-export {
-  Manager,
-  ManagerOptions,
-  Socket,
-  SocketOptions,
-} from 'socket.io-client';
+export { IoClientModule } from './io-client.module'
+export { InjectIoClientProvider, EventListener, OnConnect, OnDisconnect, OnConnectError } from './io-client.decorators'
+export { IoClientModuleOptions, IoClientModuleAsyncOptions, IoClientEventMetadata } from './io-client.interface'
+export { getIoClientToken } from './io-client.utils'
+export * from 'socket.io-client'
