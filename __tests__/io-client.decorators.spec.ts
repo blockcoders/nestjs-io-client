@@ -7,7 +7,7 @@ import {
   OnConnect,
   OnDisconnect,
   OnConnectError,
-  Socket,
+  IoClient,
   IoClientModule,
 } from '../src'
 import { createGatewayApp } from './utils/createGatewayApp'
@@ -30,7 +30,7 @@ describe('Socket.io Client Decorators', () => {
           class TestService {
             constructor(
               @InjectIoClientProvider()
-              private readonly socket: Socket,
+              private readonly socket: IoClient,
             ) {}
             async someMethod(): Promise<boolean> {
               return this.socket.connected
